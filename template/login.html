@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <!--<script src="./regex.js"></script>-->
+<style>
+</style>
+</head>
+<body>
+    <br>
+    <br>
+    <form  action= /user_register_page method="post">
+        <button type="submit"> Register as User</button>   
+    </form>
+    <br>
+    <br>
+    <form  action= '/admin_register_page' method="POST">
+        <button type="submit" >Register as Admin</button>   
+    </form>
+    <br>
+    <br>
+    <h5>{{error}}</h5>
+    <h4>Login</h4>
+    <form action= '/login' method="POST">
+        <input type= "text" name="username" id="username" placeholder="Username" required>
+        <input type= "password"  name = "password" id="pwd" placeholder="Password" required>    
+        <button type="submit">Login</button>   
+    </form> 
+</body>    

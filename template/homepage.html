@@ -1,0 +1,38 @@
+<h1>Welcome {{fname}}{{"  "}}{{lname}}</h1> 
+
+
+<img id="imageid" src="data:image/jpg;base64,{{profilepic}}"  alt="red dot" style="width:500px;height:600px;"/>
+
+
+
+<h4>Create Group</h4>
+<form action= '/create_group_page' method="POST" "> 
+    <button type="submit" >Create</button>   
+</form>
+
+<h4>Share New Post </h4>
+<form action= '/share_new_post_page' method="POST" "> 
+    <button type="submit" >Share</button>   
+</form>
+
+<h4>Delete Group</h4>
+<form action= '/delete_group_page' method="POST" > 
+    <button type="submit" >Delete</button>   
+</form>
+
+
+<h4>My Group Posts</h4>
+<form action= '/checkposts' method="POST" > 
+    <button type="submit" >My posts </button>   
+</form>
+
+<h4>My Requests</h4>
+<form action= '/approval_requests' method="POST" > 
+    <button type="submit" >Requests</button>   
+</form>
+
+
+
+<form action= '/logout' method="POST" enctype="multipart/form-data">
+    <button type="submit" >Logout</button>   
+</form>

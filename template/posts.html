@@ -1,0 +1,21 @@
+<form action="/homepage_link" method="post">
+    <input type="submit" name="submit" value="Homepage" />
+</form>
+
+{% for x in gdescription %}
+    <hr>
+    <h4>Name:{{x[0]}}</h4><br>
+    <img id="imageid" src="data:image/jpg;base64,{{x[3]}}"  alt="image" style="width:100px;height:100px;"/><br>
+    <h4>Date Posted: {{x[4]}}</h4>
+    <h4> Description :{{x[1]}}</h4><br>
+    <h4> Posted By :{{x[5]}}</h4><br>
+    <form action="/delete_post" method="post">
+        <input type="hidden" id="uuid" name="uuid" value="{{x[2]}}">
+        <input type="submit" name="submit" value="Delete Post" />
+    </form>
+    <hr>
+{% endfor %}
+
+
+
+
